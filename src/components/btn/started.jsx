@@ -1,5 +1,7 @@
 // btn untuk lets get started pada hero page
 
+import { Navigate } from "react-router-dom";
+
 export const StartedLets = () => {
   return (
     <>

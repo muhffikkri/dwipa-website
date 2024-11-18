@@ -1,10 +1,17 @@
 // halaman untuk service card pada halaman services
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import { motion, spring } from "framer-motion";
 
 export const CardServices = () => {
   return (
     <>
-      <div className="bg-white rounded-lg shadow-xl h-80 pt-10 w-96 p-4">
+      <motion.div
+        className="bg-white rounded-lg shadow-xl h-80 pt-10 w-96 p-4 cursor-pointer"
+        whileHover={{ scale: 1.05 }}
+        transition={{ type: "spring", stiffness: 300, damping: 15 }}
+        whileTap={{ scale: 0.95 }}
+      >
         <FontAwesomeIcon
           icon="fa-solid fa-terminal"
           className="border border-cyan-600 p-3 rounded-full text-xl"
@@ -17,7 +24,7 @@ export const CardServices = () => {
           it properly. Your website is your number one marketing asset because
           we live in a digital age.
         </p>
-      </div>
+      </motion.div>
     </>
   );
 };

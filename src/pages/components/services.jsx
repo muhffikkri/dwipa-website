@@ -5,7 +5,7 @@ import { CardServices } from "./servvicescard";
 export const Services = () => {
   return (
     <>
-      <div className="bg-slate-100 py-20">
+      <div className="bg-slate-100 py-20 z-20">
         <h1 className="text-center text-4xl font-bold font-nokora">
           Services we offer
         </h1>

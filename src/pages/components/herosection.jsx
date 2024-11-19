@@ -5,7 +5,7 @@ import { StartedLets } from "../../components/btn/started";
 export const Hero = () => {
   return (
     <>
-      <div className="flex justify-between px-24 pr-52 items-center bg-white h-screen">
+      <div className="flex justify-between px-24 pr-52 items-center bg-white h-screen border-b-2 relative">
         <div className="hero-section">
           <div className="text-[4.5rem]">
             <h1 className="font-thin">
@@ -30,7 +30,11 @@ export const Hero = () => {
             <StartedLets />
           </div>
         </div>
-        <img src={imageHero} alt="team" className="transform scale-125" />
+        <div className="bola-bola">
+          <img src={imageHero} alt="team" className="transform scale-125" />
+          {/* untuk menciptakan bola bola pada halaman home */}
+          <div className="bg-gradient-to-b from-green-600 to-yellow-500 h-10 w-20 rounded-t-full absolute bottom-0 left-1/3"></div>
+        </div>
       </div>
     </>
   );

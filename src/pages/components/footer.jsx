@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
     <>
-      <footer className="text-gray-400 py-10 px-24">
+      <footer className="bg-gray-50 text-gray-400 py-10 px-24">
         <div className="container mx-auto px-4">
           <div className="flex gap-28">
             <div className="max-w-sm">

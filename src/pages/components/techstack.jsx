@@ -1,26 +1,64 @@
+// export const TechStack = () => {
+//   return (
+//     <>
+//       <div className="text-center py-10">
+//         <h2 className="text-2xl font-bold mb-2">Our</h2>
+//         <h1 className="text-4xl font-bold mb-6">Tech Stack</h1>
+//         <div className="flex justify-center space-x-8 mb-8 gap-4">
+//           <span className="text-purple-600 border-b-2 border-purple-600">Backend</span>
+//           <span>Frontend</span>
+//           <span>Databases</span>
+//           <span>CMS</span>
+//           <span>CloudTesting</span>
+//           <span>DevOps</span>
+//         </div>
+//         <div className="grid grid-cols-4 gap-8 mx-auto max-w-4xl">
+//           <img src="https://placehold.co/100x100?text=Node.js" alt="Node.js logo" className="mx-auto" />
+//           <img src="https://placehold.co/100x100?text=PHP" alt="PHP logo" className="mx-auto" />
+//           <img src="https://placehold.co/100x100?text=MySQL" alt="MySQL logo" className="mx-auto" />
+//           <img src="https://placehold.co/100x100?text=Java" alt="Java logo" className="mx-auto" />
+//           <img src="https://placehold.co/100x100?text=Python" alt="Python logo" className="mx-auto" />
+//           <img src="https://placehold.co/100x100?text=Rails" alt="Rails logo" className="mx-auto" />
+//           <img src="https://placehold.co/100x100?text=Go" alt="Go logo" className="mx-auto" />
+//           <img src="https://placehold.co/100x100?text=MongoDB" alt="MongoDB logo" className="mx-auto" />
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+import { useState } from "react";
+import { motion } from "framer-motion";
+
+const techLogos = [
+  { src: "https://placehold.co/100x100?text=Node.js", alt: "Node.js logo" },
+  { src: "https://placehold.co/100x100?text=PHP", alt: "PHP logo" },
+  { src: "https://placehold.co/100x100?text=MySQL", alt: "MySQL logo" },
+  { src: "https://placehold.co/100x100?text=Java", alt: "Java logo" },
+  { src: "https://placehold.co/100x100?text=Python", alt: "Python logo" },
+  { src: "https://placehold.co/100x100?text=Rails", alt: "Rails logo" },
+  { src: "https://placehold.co/100x100?text=Go", alt: "Go logo" },
+  { src: "https://placehold.co/100x100?text=MongoDB", alt: "MongoDB logo" },
+];
+
 export const TechStack = () => {
+  const [activeCategory, setActiveCategory] = useState("Backend");
   return (
     <>
       <div className="text-center py-10">
         <h2 className="text-2xl font-bold mb-2">Our</h2>
         <h1 className="text-4xl font-bold mb-6">Tech Stack</h1>
-        <div className="flex justify-center space-x-8 mb-8 gap-4">
-          <span className="text-purple-600 border-b-2 border-purple-600">Backend</span>
-          <span>Frontend</span>
-          <span>Databases</span>
-          <span>CMS</span>
-          <span>CloudTesting</span>
-          <span>DevOps</span>
+        <div className="flex flex-wrap justify-center space-x-4 md:space-x-8 mb-8 gap-4">
+          {["Backend", "Frontend", "Databases", "CMS", "CloudTesting", "DevOps"].map((category) => (
+            <span key={category} className={`${activeCategory === category ? "text-purple-600 border-b-2 border-purple-600" : ""} cursor-pointer shrink `} onClick={() => setActiveCategory(category)}>
+              {category}
+            </span>
+          ))}
         </div>
-        <div className="grid grid-cols-4 gap-8 mx-auto max-w-4xl">
-          <img src="https://placehold.co/100x100?text=Node.js" alt="Node.js logo" className="mx-auto" />
-          <img src="https://placehold.co/100x100?text=PHP" alt="PHP logo" className="mx-auto" />
-          <img src="https://placehold.co/100x100?text=MySQL" alt="MySQL logo" className="mx-auto" />
-          <img src="https://placehold.co/100x100?text=Java" alt="Java logo" className="mx-auto" />
-          <img src="https://placehold.co/100x100?text=Python" alt="Python logo" className="mx-auto" />
-          <img src="https://placehold.co/100x100?text=Rails" alt="Rails logo" className="mx-auto" />
-          <img src="https://placehold.co/100x100?text=Go" alt="Go logo" className="mx-auto" />
-          <img src="https://placehold.co/100x100?text=MongoDB" alt="MongoDB logo" className="mx-auto" />
+        <div className="grid grid-cols-4 px-4 sm:px-0 gap-3 md:gap-8 mx-auto max-w-xs md:max-w-4xl">
+          {techLogos.map((tech, index) => (
+            <motion.img key={index} src={tech.src} alt={tech.alt} className="mx-auto" whileHover={{ scale: 1.1 }} />
+          ))}
         </div>
       </div>
     </>

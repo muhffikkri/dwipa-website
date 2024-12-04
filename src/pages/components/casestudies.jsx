@@ -8,11 +8,11 @@ export const CaseStudies = () => {
             <h1 className="text-4xl font-bold text-gray-800">Case studies</h1>
           </section>
           <section className="space-y-8 px-16">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-16 bg-blue-50 p-8 rounded-lg shadow-md">
-              <div className="flex space-x-4">
+            <div className="flex flex-col xl:flex-row items-center justify-center gap-16 bg-blue-50 p-8 rounded-lg shadow-md">
+              <div className="flex flex-col md:flex-row gap-3">
                 <img src="https://placehold.co/150x300" alt="Mobile app design 1" className="rounded-lg" />
-                <img src="https://placehold.co/150x300" alt="Mobile app design 2" className="rounded-lg" />
-                <img src="https://placehold.co/150x300" alt="Mobile app design 3" className="rounded-lg" />
+                <img src="https://placehold.co/150x300" alt="Mobile app design 2" className="rounded-lg hidden md:block" />
+                <img src="https://placehold.co/150x300" alt="Mobile app design 3" className="rounded-lg hidden md:block" />
               </div>
               <div className="md:ml-8 mt-4 md:mt-0 max-w-md">
                 <h3 className="text-xl font-bold text-gray-800">Website Design for SCFC Canada</h3>
@@ -25,11 +25,11 @@ export const CaseStudies = () => {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-16 bg-green-50 p-8 rounded-lg shadow-md">
-              <div className="flex space-x-4">
+            <div className="flex flex-col xl:flex-row items-center justify-center gap-16 bg-blue-50 p-8 rounded-lg shadow-md">
+              <div className="flex flex-col md:flex-row gap-3">
                 <img src="https://placehold.co/150x300" alt="Mobile app design 4" className="rounded-lg" />
-                <img src="https://placehold.co/150x300" alt="Mobile app design 5" className="rounded-lg" />
-                <img src="https://placehold.co/150x300" alt="Mobile app design 6" className="rounded-lg" />
+                <img src="https://placehold.co/150x300" alt="Mobile app design 5" className="rounded-lg hidden md:block" />
+                <img src="https://placehold.co/150x300" alt="Mobile app design 6" className="rounded-lg hidden md:block" />
               </div>
               <div className="md:ml-8 mt-4 md:mt-0 max-w-md">
                 <h3 className="text-xl font-bold text-gray-800">Website Design for SCFC Canada</h3>
@@ -42,11 +42,11 @@ export const CaseStudies = () => {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-16 bg-pink-50 p-8 rounded-lg shadow-md">
-              <div className="flex space-x-4">
+            <div className="flex flex-col xl:flex-row items-center justify-center gap-16 bg-blue-50 p-8 rounded-lg shadow-md">
+              <div className="flex flex-col md:flex-row gap-3">
                 <img src="https://placehold.co/150x300" alt="Mobile app design 7" className="rounded-lg" />
-                <img src="https://placehold.co/150x300" alt="Mobile app design 8" className="rounded-lg" />
-                <img src="https://placehold.co/150x300" alt="Mobile app design 9" className="rounded-lg" />
+                <img src="https://placehold.co/150x300" alt="Mobile app design 8" className="rounded-lg hidden md:block" />
+                <img src="https://placehold.co/150x300" alt="Mobile app design 9" className="rounded-lg hidden md:block" />
               </div>
               <div className="md:ml-8 mt-4 md:mt-0 max-w-md">
                 <h3 className="text-xl font-bold text-gray-800">Website Design for SCFC Canada</h3>

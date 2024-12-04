@@ -73,7 +73,7 @@ export const HomePage = () => {
 
       {/* untuk membuat footer */}
       <footer id="footer">
-        <Footer></Footer>
+        <Footer />
       </footer>
     </>
   );

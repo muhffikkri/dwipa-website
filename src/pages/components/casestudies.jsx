@@ -7,7 +7,7 @@ export const CaseStudies = () => {
             <h2 className="text-2xl text-gray-600">Our recent</h2>
             <h1 className="text-4xl font-bold text-gray-800">Case studies</h1>
           </section>
-          <section className="space-y-8 px-4 lg:px-16">
+          <section className="space-y-8 px-6 lg:px-16">
             <div className="flex flex-col xl:flex-row items-center justify-center gap-16 bg-blue-50 p-8 rounded-lg shadow-md">
               <div className="flex flex-col md:flex-row gap-3">
                 <img src="https://placehold.co/150x300" alt="Mobile app design 1" className="rounded-lg" />
@@ -69,7 +69,7 @@ export const CaseStudies = () => {
             <h2 className="text-2xl text-gray-600">Way of building</h2>
             <h1 className="text-4xl font-bold text-gray-800">Great Software</h1>
           </section>
-          <section className="space-y-8 px-16">
+          <section className="space-y-8 px-6 lg:px-16">
             <div className="flex flex-col md:flex-row items-center justify-center gap-16 bg-white p-8 rounded-lg shadow-md ">
               <div className="md:w-1/2">
                 <h3 className="text-xl font-bold text-gray-800">Build the right team to scale</h3>

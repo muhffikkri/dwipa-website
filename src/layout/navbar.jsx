@@ -55,7 +55,7 @@ export const NavPar = () => {
           </div>
 
           {/* Hamburger Button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button onClick={toggleMenu} className="focus:outline-none focus:ring-2 focus:ring-red-400">
               <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /> : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />}
@@ -64,7 +64,7 @@ export const NavPar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-9 font-nokora">
+          <div className="hidden lg:flex lg:space-x-4 xl:space-x-9 font-nokora">
             <p>About Us</p>
             <p>Services</p>
             <p>Case Studies</p>
@@ -74,14 +74,14 @@ export const NavPar = () => {
           </div>
 
           {/* Call to Action Button */}
-          <div className="hidden md:block font-nokora">
+          <div className="hidden lg:block font-nokora">
             <Btn />
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white shadow-lg">
+          <div className="lg:hidden bg-white shadow-lg">
             <div className="flex flex-col items-center space-y-4 py-4 font-nokora">
               <p>About Us</p>
               <p>Services</p>

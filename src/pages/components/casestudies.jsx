@@ -11,7 +11,7 @@ export const CaseStudies = () => {
             <h1 className="text-4xl font-bold text-gray-800">Case studies</h1>
           </section>
           <section className="space-y-8 px-4 lg:px-16">
-            <CaseStudiesCard></CaseStudiesCard>
+            <CaseStudiesCard />
             <CaseStudiesCard />
             <CaseStudiesCard />
           </section>
